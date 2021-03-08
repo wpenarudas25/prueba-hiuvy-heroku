@@ -88,21 +88,6 @@
 
 							<div class="col-md-3">
 								<div class="form-group">
-									<label for="tipo">Tipo de usuario: </label> <select
-										class="form-control" th:size="1"
-										th:field="${userForm.roles}" th:disabled="${disableFields}">
-											<option th:each="role :${roles}" th:value="${role.id}"
-												th:text="${role.name}"></option>
-									</select>
-										<div class="alert-danger"
-											th:if="${#fields.hasErrors('roles')}" th:errors="*{roles}">Name
-											Error</div>
-										<!-- <input type="text" class="form-control" id="tipo" name="tipo"
-										placeholder="Tipo de usuario" required="required"> -->
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="form-group">
 									<label for="password">Contraseña: </label> <input
 										th:field="${userForm.password}" type="password"
 										placeholder="******" th:value="${userForm.password}" class="form-control"
