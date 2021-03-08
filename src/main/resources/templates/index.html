@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="favicon.ico">
+
+<title>Prueba | Hiuvy Digital</title>
+<link rel="shortcut icon" href="/images/logo.png">
+<!-- Bootstrap core CSS -->
+<link th:href="@{/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link th:href="@{/bootstrap/css/jumbotron.css}" rel="stylesheet">
+<link th:href="@{/bootstrap/css/sticky-footer-navbar.css}"
+	rel="stylesheet">
+</head>
+
+<body>
+
+	<div th:replace="~{fragments/header :: header}">Header</div>
+
+	<main role="main">
+
+		<!-- Main jumbotron for a primary marketing message or call to action -->
+		<div class="jumbotron">
+			<div class="container">
+				<h3>Implementación del punto # 2 de la prueba</h3>
+				Creando una aplicaión donde se realiza un CRUD con la entidad User.
+
+			</div>
+		</div>
+
+
+		<div class="container">
+			<h2 class="font-weight-bold text-center text-capitalize">Funciones del programa</h2>
+			<hr>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Listar Usuarios</h5>
+							<p class="card-text">En la opción "Listado de usuarios" podrás ver los usuarios
+							ingresados en el sistema y las acciones que se pueden realizar.</p>
+							<a href="/list" class="btn btn-primary">Listado de Usuarios</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Crear Usuario</h5>
+							<p class="card-text">En esta sección se muestra un formulario con los campos necesarios 
+							para ingresar un nuevo usuario a la aplicación.</p>
+							<a href="/userForm" class="btn btn-primary">Crear Usuario</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+		</div>
+		<!-- /container -->
+
+	</main>
+
+	<div th:insert="~{fragments/footer :: footer}">&copy;</div>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+</body>
+</html>
